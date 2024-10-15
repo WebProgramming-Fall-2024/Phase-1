@@ -21,21 +21,23 @@ The goal is to create an interactive game where users can take on the role of a 
 ### **Requirements**
 
 #### **Users**  
-The system will have two types of users: **designers** and **players**. Each group’s requirements are detailed separately. Both roles require registration and login.
+The system will have two types of users: **designers** and **Answerers (players)**. Each group’s requirements are detailed separately. Both roles require registration and login.
 
 #### **Designer Role**  
-- Create multiple-choice questions (including the question text, options, correct answer, etc.)
+This role is created to design questions in the system. The requirements for this role are listed below:
+- Create Four-choice questions (including the question text, options, correct answer, etc.)
 - Create new categories
 - Categorize questions into existing categories
 - Set question difficulty levels
 - Link related questions (either from the same designer or others)
 
 #### **Player Role**  
+This role is created to answer the existing questions in the system. The requirements for this role are listed below:
 - Answer questions from a chosen category
 - Answer random questions
 - Follow question designers
 - Follow other players
-- View leaderboard
+- View leaderboard/scoreboard
 
 ### **Phase 1 – Practical Section**
 
@@ -71,8 +73,4 @@ In this phase, the focus is on designing and implementing the user interface of 
 ---
 
 ### **Notes**
-- Project submission deadline is early November.
-- For questions about this phase, use the hashtag #phase1 in the Telegram group.
-- Create a maximum 5-minute video introducing the system (showing different pages, etc.).
 - You are not expected to reinvent the wheel 🙂, so using popular CSS libraries is allowed. However, if you implement creative designs without CSS libraries, you can earn bonus points.
-
