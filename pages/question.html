@@ -13,51 +13,6 @@
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../../css/player/index.css" />
     <link rel="stylesheet" href="../css/lib/fonts/icomoon/style.css" />
-    <style>
-      body {
-        background-color: #f0f8ff;
-        font-family: 'Arial', sans-serif;
-      }
-      .navbar {
-        background-color: #7573dd !important;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-      .navbar .nav-link {
-        color: #fff !important;
-      }
-      .btn-outline-primary {
-        border-color: #9289df;
-        color: #642bcc;
-      }
-      .btn-outline-primary:hover {
-        background-color: #aaa6e2;
-        color: #fff;
-      }
-      .form-control {
-        border-radius: 8px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      }
-      .form-group label {
-        color: #333;
-        font-weight: bold;
-      }
-      .btn-primary,
-      .btn-outline-success,
-      .btn-outline-danger {
-        border-radius: 8px;
-      }
-      .modal-header,
-      .modal-footer {
-        border: none;
-      }
-      .modal-header {
-        background-color: #8268d7;
-        color: white;
-      }
-      .modal-content {
-        border-radius: 10px;
-      }
-    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -69,11 +24,13 @@
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
-            >نام کاربری</a
           >
+            نام کاربری
+          </a>
           <ul class="dropdown-menu">
             <li class="text-end">حالت شبانه<i class="icon-moon mx-2"></i></li>
             <li><hr class="dropdown-divider" /></li>
+
             <li class="text-end">خروج<i class="icon-exit mx-2"></i></li>
           </ul>
         </div>
@@ -95,9 +52,10 @@
           >
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="home.html"
-                >صفحه اصلی</a
+                >صفجه اصلی</a
               >
             </li>
+
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="points.html"
                 >امتیازات</a
@@ -146,22 +104,19 @@
       <div class="d-flex justify-content-between">
         <nav class="navbar">
           <div class="container-fluid">
-            <button
-              class="btn btn-outline-primary"
-              id="add_btn_question"
-              style="color: #fffefe"
-            >
+            <button class="btn btn-outline-primary" id="add_btn_question">
               افزودن سوال
             </button>
+
             <button
               class="btn btn-outline-primary mx-3"
               onclick="window.location.href = 'category.html'"
-              style="color: #fffdfd"
             >
               افزودن دسته بندی
             </button>
           </div>
         </nav>
+
         <nav class="navbar">
           <div class="container-fluid">
             <button
@@ -172,7 +127,6 @@
               aria-controls="navbarToggleExternalContent"
               aria-expanded="false"
               aria-label="Toggle navigation"
-              style="color: #f0f8ff"
             >
               جستجو
             </button>
