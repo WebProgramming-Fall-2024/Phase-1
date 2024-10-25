@@ -78,4 +78,13 @@
 <script src="../js/lib/jquery-3.7.1.min.js"></script>
 <script src="../js/utility.js"></script>
 <script src="../js/login.js"></script>
+
+<!-- Redirection Logic -->
+<script>
+    document.querySelector("form").addEventListener("submit", function(event){
+        event.preventDefault();  // Prevent form submission
+        window.location.href = "home.html";  // Redirect to home.html
+    });
+</script>
+
 </html>
