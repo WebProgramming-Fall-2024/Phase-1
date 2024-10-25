@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" type="image/jpg" href="../img/sharif.png" />
+    <title>امتیاز</title>
+    <link rel="stylesheet" href="../css/lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/lib/fonts/icomoon/style.css" />
+    <style>
+      body {
+        background-color: #f0f8ff;
+        font-family: 'Arial', sans-serif;
+      }
+      .navbar {
+        background-color: #7573dd !important;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .navbar .nav-link {
+        color: #fff !important;
+      }
+      .btn-outline-primary {
+        border-color: #9289df;
+        color: #642bcc;
+      }
+      .btn-outline-primary:hover {
+        background-color: #aaa6e2;
+        color: #fff;
+      }
+      .form-control {
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .form-group label {
+        color: #333;
+        font-weight: bold;
+      }
+      .btn-primary,
+      .btn-outline-success,
+      .btn-outline-danger {
+        border-radius: 8px;
+      }
+      .modal-header,
+      .modal-footer {
+        border: none;
+      }
+      .modal-header {
+        background-color: #8268d7;
+        color: white;
+      }
+      .modal-content {
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid d-flex justify-content-between">
+        <div class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            نام کاربری
+          </a>
+          <ul class="dropdown-menu">
+            <li class="text-end">حالت شبانه<i class="icon-moon mx-2"></i></li>
+            <li><hr class="dropdown-divider" /></li>
+
+            <li class="text-end">خروج<i class="icon-exit mx-2"></i></li>
+          </ul>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav ms-auto text-end pe-0 pe-lg-3 my-2 my-lg-0"
+            style="direction: rtl"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html"
+                >صفجه اصلی</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="points.html"
+                >امتیازات</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="users.html"
+                >کاربران</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="my-4 mx-3 d-flex flex-column justify-content-between"
+      style="direction: rtl"
+    >
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-4 row justify-content-around">
+          <div class="col-md-5">
+            <label for="category_search" class="my-2 fw-bolder"
+              >نام دسته بندی</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="category_search"
+              placeholder="نام دسته بندی مورد نظر خود را وارد کنید"
+              autocomplete="off"
+            />
+          </div>
+          <div class="col-md-5">
+            <label for="category_search" class="my-2 fw-bolder">فیلتر</label>
+            <select class="form-control">
+              <option>انتخاب کنید</option>
+              <option>نام</option>
+              <option>امتیاز</option>
+              <option>تعداد سوال</option>
+            </select>
+          </div>
+          <div class="mt-2 d-flex justify-content-end">
+            <button class="btn btn-outline-primary">اعمال تغییرات</button>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-end">
+        <nav class="navbar">
+          <div class="container-fluid d-flex justify-content-end">
+            <button
+              class="btn btn-outline-success"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarToggleExternalContent"
+              aria-controls="navbarToggleExternalContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              style="color: #f0f8ff"
+            >
+              جستجو
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="mx-5 text-center" style="overflow-x: auto; direction: rtl">
+      <table class="table table-hover">
+        <thead class="table-primary">
+          <tr>
+            <th class="px-4" style="white-space: nowrap">#</th>
+            <th class="px-4" style="white-space: nowrap">نام بازیکن</th>
+            <th class="px-4" style="white-space: nowrap">امتیاز</th>
+
+            <th class="px-4" style="white-space: nowrap">تعداد سوال</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1</th>
+            <td>مهرشاد برزمینی</td>
+            <td>۳۴</td>
+            <td>۶۰</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>مهرشاد برزمینی</td>
+            <td>۳۴</td>
+            <td>۶۰</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>مهرشاد برزمینی</td>
+            <td>۳۴</td>
+            <td>۶۰</td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <td>مهرشاد برزمینی</td>
+            <td>۳۴</td>
+            <td>۶۰</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <nav
+      class="d-flex justify-content-center align-items-center mx-auto"
+      style="
+        position: absolute;
+        bottom: 80px;
+        left: 0;
+        right: 0;
+        margin-inline: auto;
+        width: fit-content;
+      "
+    >
+      <ul class="pagination">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active">
+          <a class="page-link" href="#">2 <span class="sr-only"></span></a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+    <nav
+      class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light py-2 d-flex justify-content-end px-4"
+    >
+      دانشگاه شریف
+    </nav>
+  </body>
+  <script src="../js/lib/bootstrap.bundle.min.js"></script>
+  <script src="../js/lib/jquery-3.7.1.min.js"></script>
+  <script src="../js/utility.js"></script>
+</html>
